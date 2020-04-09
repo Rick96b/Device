@@ -9,35 +9,39 @@
 		<nav class="header-nav" aria-label="Navigation">
 			<h2 class="visually-hidden">Навигация</h2>
 			<div class="site-navigation" aria-label="Navigation on cite">
-				<form class="site-navigation-search" action="" method="post" aria-label="Поиск по сайту">
-					<button class="site-navigation-search-button" aria-label="Найти" type="submit"><img src="img/search.svg" alt="Search"></button>
+				<form class="navigation-search" action="" method="post" aria-label="Поиск по сайту">
+					<button class="search-button" aria-label="Найти" type="submit"><img src="img/search.svg" alt="Search"></button>
 					<label for="search-input"></label>
 					<input id="search-input" type="search" name="search" placeholder="Поиск по сайту">
 				</form>
-				<a href="#" class="enter">Войти</a>
-				<a href="#" lass="compare">Сравнить</a>
-				<a href="#" class="card">Корзина</a>
+				<ul class="header-user-menu">
+					<li><a href="#" class="enter">Войти</a></li>
+					<li><a href="#" lass="compare">Сравнить</a></li>
+					<li><a href="#" class="card">Корзина</a></li>
+				</ul>
 			</div>
 			<div class="offers-navigation" aria-label="Navigation on offers">
 				<div class="offers" aria-label="goods">
 					<a href="#">КАТАЛОГ ТОВАРОВ</a>
-					<ul class="goods-list">
-						<li class="goods-list-item"><a href="#" class="goods-list-item-link">Виртуальная реальность</a></li>
-						<li class="goods-list-item"><a href="#" class="goods-list-item-link">Фитнес-браслеты</a></li>
-						<li class="goods-list-item"><a href="#" class="goods-list-item-link">Квадрокоптеры</a></li>
-						<li class="goods-list-item"><a href="#" class="goods-list-item-link">Моноподы для селфи</a></li>
-						<li class="goods-list-item"><a href="#" class="goods-list-item-link">Умные часы</a></li>
-						<li class="goods-list-item"><a href="#" class="goods-list-item-link">Экшн-камеры</a></li>
+					<ul class="goods-list visually-hidden">
+						<li class="goods-list-item"><a href="#">Виртуальная реальность</a></li>
+						<li class="goods-list-item"><a href="#">Фитнес-браслеты</a></li>
+						<li class="goods-list-item"><a href="#">Квадрокоптеры</a></li>
+						<li class="goods-list-item"><a href="#">Моноподы для селфи</a></li>
+						<li class="goods-list-item"><a href="#">Умные часы</a></li>
+						<li class="goods-list-item"><a href="#">Экшн-камеры</a></li>
 					</ul>
 				</div>
-				<a href="#" class="delivery-link">ДОСТАВКА</a>
-				<a href="#" class="Guarantees-link">ГАРАНТИЯ</a>
-				<a href="#" class="contacts-link">КОНТАКТЫ</a>
+				<ul class="header-site-menu">
+					<li><a href="#" class="delivery-link">ДОСТАВКА</a></li>
+					<li><a href="#" class="Guarantees-link">ГАРАНТИЯ</a></li>
+					<li><a href="#" class="contacts-link">КОНТАКТЫ</a></li>
+				</ul>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<div class="breadcrumbs-navigation">
+		<div class="breadcrumbs-navigation" aria-label="Навигация">
 			<h2>Моноподы для селфи</h2>
 			<ul class="breadcrumbs">
 				<li><a href="#">Главная</a></li>
@@ -97,21 +101,21 @@
 				<h3>Сортировка:</h3>
 				<ul class="goods-sort-buttons">
 					<li class="goods-sort-buttons-item">
-						<button type="button">По цене</button>
+						<a href="#">По цене</a>
 					</li>
 					<li class="goods-sort-buttons-item">
-						<button type="button">По типу</button>
+						<a href="#">По типу</a>
 					</li>
 					<li class="goods-sort-buttons-item">
-						<button type="button">По популярности</button>
+						<a href="#">По популярности</a>
 					</li>
 				</ul>
 				<ul class="goods-switch-buttons">
 					<li class="goods-switch-buttons-item">
-						<button type="button"><img src="img/icon-down-dir.svg" alt="Down"></button>
+						<a href="#">Increase</a>
 					</li>
 					<li class="goods-switch-buttons-item">
-						<button type="button"><img src="img/icon-up-dir.svg" alt="Up"></button>
+						<a href="#">Decrease</a>
 					</li>
 				</ul>
 			</div>
@@ -149,41 +153,33 @@
 		</nav>
 	</main>
 	<footer class="main-footer">
-		<h2>DEVICE</h2>
-		<p class="main-footer-enter">
-			<a href="#">Войти</a>
-		</p>
-		<p class="main-footer-compare">
-			<a href="#">Сравнить</a>
-		</p>
-		<p class="main-footer-card">
-			<a href="#">Корзина</a>
-		</p>
-		<p class="main-footer-adress">г. Москва, ул. Строителей, 15</p>
-		<ul class="main-footer-site-navigation">
-			<li class="main-footer-site-navigation-item"><a href="#">Доставка</a></li>
-			<li class="main-footer-site-navigation-item"><a href="#">Гарантия</a></li>
-			<li class="main-footer-site-navigation-item"><a href="#">Контакты</a></li>
-		</ul>
-		<p class="main-footer-phone-number">Тел.: +7 (495) 495-95-95</p>
-		<hr>
-		<ul class="main-footer-social-networks">
-			<li class="main-footer-social-networks-item">
-				<a href="#" class="main-footer-social-networks-item-link" aria-label="Facebook link">
-					<img src="img/fb.png" alt="Facebook">
-				</a>
-			</li>
-			<li class="main-footer-social-networks-item">
-				<a href="#" class="main-footer-social-networks-item-link" aria-label="Instagramm link">
-					<img src="img/inst.png" alt="Instagramm">
-				</a>
-			</li>
-			<li class="main-footer-social-networks-item">
-				<a href="#" class="main-footer-social-networks-item-link" aria-label="Twitter link">
-					<img src="img/twitter.png" alt="Twitter">
-				</a>
-			</li>
-		</ul>
+		<div class="footer-top">
+			<span class="logo-footer">DEVICE</span>
+			<ul class="footer-user-menu">
+				<li><a href="#">Войти</a></li>
+				<li><a href="#">Сравнить</a></li>
+				<li><a href="#">Корзина</a></li>
+			</ul>
+		</div>
+		<div class="footer-middle">
+			<p>г.Москва, ул.Строителей, 15</p>
+			<ul class="footer-site-menu">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<p>Тел.: +7(495)495-95-95</p>
+		</div>
+		<div class="footer-bottom">
+			<ul class="social-buttons">
+				<li><a href="#" class="social-button-facebook">Facebook</a></li>
+				<li><a href="#" class="social-button-instagramm">Instagramm</a></li>
+				<li><a href="#" class="social-button-twitter">Twitter</a></li>
+			</ul>
+			<p class="copyright">
+				<span class="icon">HTML Academy</span>
+			</p>
+		</div>
 	</footer>
 </body>
 </html>
