@@ -3,19 +3,19 @@
 <head>
 	<title>DEVICE</title>
 	<meta charset="utf-8">
-	<link type="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<header class="main-header">
-		<h1 class="header-logo"><a>DEVICE</a></h1>
+		<h1><a class="header-logo">DEVICE</a></h1>
 		<nav class="header-nav" aria-label="Navigation">
 			<h2 class="visually-hidden">Навигация</h2>
-			<div class="site-navigation" aria-label="Navigation on cite">
-				<form class="navigation-search" action="" method="post" aria-label="Поиск по сайту">
-					<button class="search-button" aria-label="Найти" type="submit"><img src="img/search.svg" alt="Search"></button>
-					<label for="search-input"></label>
-					<input id="search-input" type="search" name="search" placeholder="Поиск по сайту">
+			<div class="navigation-top" aria-label="Navigation for user">
+				<form class="navigation-search-form" action="" method="post" aria-label="Поиск по сайту">
+					<img src="img/search.svg" alt="Search">
+					<input id="search-input" type="search" name="search-input" placeholder="Поиск по сайту">
+					<label for="search-input" class="visually-hidden">Поле поиска</label>
+					<button class="button search-button" aria-label="Найти" type="submit"><span>Найти</span></button>
 				</form>
 				<ul class="header-user-menu">
 					<li><a href="#" class="enter">Войти</a></li>
@@ -23,7 +23,7 @@
 					<li><a href="#" class="card">Корзина</a></li>
 				</ul>
 			</div>
-			<div class="offers-navigation" aria-label="Navigation on offers">
+			<div class="navigation-bottom" aria-label="Navigation on site">
 				<div class="offers" aria-label="goods">
 					<a href="#">КАТАЛОГ ТОВАРОВ</a>
 					<ul class="goods-list visually-hidden">
@@ -45,16 +45,16 @@
 	</header>
 	<main class="container">
 		<section class="most-popular-goods">
-			<ol>
+			<ol class="slider">
 				<li class="selfie-stick-slide">
 					<h2 class="visually-hidden">Selfie-stick</h2>
 					<img src="img/slider-1.png" alt="Selfie-stick">
-					<b class="slider-1-slogan">Делай селфи, как Бен Стиллер!</b>
-					<p class="slider-1-description">
+					<b class="slider-slogan">Делай селфи, как Бен Стиллер!</b>
+					<p class="slider-description">
 						Самая длинная палка для селфи доступна в нашем магазине.
 						Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 					</p>
-					<a href="#">Подробнее</a>
+					<a href="#" class="button-link"><span>Подробнее</span></a>
 					<ul class="Selfie-stick-characteristic">
 						<li>
 							<b>8,5 м</b>
@@ -73,24 +73,24 @@
 				<li class="smart-clock-slide"> 
 					<h2 class="visually-hidden">Smart-clock</h2>
 					<img src="img/slider-2.png" alt="Smart-clock">
-					<b class="slider-2-slogan">Худеем правильно!</b>
-					<p class="slider-2-description">
+					<b class="slider-slogan">Худеем правильно!</b>
+					<p class="slider-description">
 						Мотивирующие фитнес-браслеты помогут найти в себе силы
 						не пропускать занятия и соблюдать диету.
 					</p>
-					<a href="#">Подробнее</a>
+					<a href="#" class="button-link"><span>Подробнее</span></a>
 					<b>48 часов</b>
 					<p>Без подзарядки</p>
 				</li>
 				<li class="quadcopter-slide">
 					<h2 class="visually-hidden">Quadcopter</h2>
 					<img src="img/slider-3.png" alt="Quadcopter">
-					<b class="slider-3-slogan">Порхает как бабочка, жалит как пчела!</b>
-					<p class="slider-3-description">
+					<b class="slider-slogan">Порхает как бабочка, жалит как пчела!</b>
+					<p class="slider-description">
 						Этот обычный, на первый взгляд квадрокоптер оснащен
 						мощным лазером, замаскированным под стандартную камеру.
 					</p>
-					<a href="#">Подробнее</a>
+					<a href="#" class="button-link"><span>Подробнее</span></a>
 					<ul class="Quadcopter-characteristic">
 						<li class="Quadcopter-characteristic-item">
 							<b>800 м</b>
@@ -153,27 +153,27 @@
 		<section class="services">
 			<h2 class="visually-hidden">Сервисы</h2>
 			<ul class="services-navigation">
-				<li><button>ДОСТАВКА</button></li>
-				<li><button>ГАРАНТИЯ</button></li>
-				<li><button>КРЕДИТ</button></li>
+				<li><button class="button">ДОСТАВКА</button></li>
+				<li><button class="button">ГАРАНТИЯ</button></li>
+				<li><button class="button">КРЕДИТ</button></li>
 			</ul>
 			<section class="delivery">
 				<h3>Доставка</h3>
-				<p>
+				<p class="service-description">
 					Мы с удовольствием доставим ваш товар прямо к вашему подъезду
 					совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж
 				</p>
 			</section>
 			<section class="Guarantees">
 				<h3>Гарантии</h3>
-				<p>
+				<p class="service-description">
 					Если из-за купленного у нас товара у вас сгорит дом
 					- не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
 				</p>
 			</section>
 			<section class="credit">
 				<h3>Кредит</h3>
-				<p>
+				<p class="service-description">
 					Залезть в долговую яму стало проще! Кредитные
 					консультанты подберут для вас наиболее выгодные 
 					условия кредита. Выгодные для нашего банка, разумеется.
@@ -188,31 +188,32 @@
 				<li><img src="img/logo-4-oc.jpg" alt="VIVE"></li>
 			</ul>
 		</aside>
-		<section class="about-us">
-			<h2>О нас</h2>
-			<hr>
-			<p>
-				Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-			</p>
-			<p>
-				Мы можем доставить ваш товар в самые отдаленные точки России!
-				DEVICE работает со многими транспортными компаниями:
-			</p>
-			<ul class="about-us-companies-list">
-				<li>Деловые Линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
-			</ul>
-			<a href="#">ПОДРОБНЕЕ О НАС</a>
-		</section>
-		<section class="contacts">
-			<h2>Контакты</h2>
-			<p>
-				Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-			</p>
-			<img src="img/map.png" alt="Adress here">
-			<a href="#">НАПИШИТЕ НАМ</a>
-		</section>
+		<div class="about-us-and-contacts">
+			<section class="about-us">
+				<h2>О нас</h2>
+				<p>
+					Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+				</p>
+				<p>
+					Мы можем доставить ваш товар в самые отдаленные точки России!
+					DEVICE работает со многими транспортными компаниями:
+				</p>
+				<ul class="about-us-companies-list">
+					<li>Деловые Линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="button-link"><span>ПОДРОБНЕЕ О НАС</span></a>
+			</section>
+			<section class="contacts">
+				<h2>Контакты</h2>
+				<p>
+					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+				</p>
+				<img src="img/map.png" alt="Adress here">
+				<a href="#" class="button-link"><span>НАПИШИТЕ НАМ</span></a>
+			</section>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="footer-top">
@@ -234,9 +235,9 @@
 		</div>
 		<div class="footer-bottom">
 			<ul class="social-buttons">
-				<li><a href="#" class="social-button-facebook">Facebook</a></li>
-				<li><a href="#" class="social-button-instagramm">Instagramm</a></li>
-				<li><a href="#" class="social-button-twitter">Twitter</a></li>
+				<li><a href="#" class="visually-hidden social-button-facebook" aria-label="Facebook"><img src="img/fb.png" alt=""></a></li>
+				<li><a href="#" class="visually-hidden social-button-instagramm" aria-label="Instagramm"><img src="img/inst.png" alt=""></a></li>
+				<li><a href="#" class="visually-hidden social-button-twitter" aria-label="Twitter"><img src="img/twitter.png" alt=""></a></li>
 			</ul>
 			<p class="copyright">
 				<span class="icon">HTML Academy</span>
@@ -258,7 +259,7 @@
 				Текст письма:
 				<textarea name="message" placeholder="В свободной форме"></textarea>
 			</label>
-			<button type="submit" class="contact-us-form-submit">Отправить</button>
+			<button type="submit" class="button button-link">Отправить</button>
 		</form>
 	</section>
 	<section class="map-popup">
