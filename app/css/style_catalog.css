@@ -1,0 +1,292 @@
+@font-face {
+	font-family: "Gilroy"
+	src: url("fonts/gilroy/Gilroyextrabold.ttf") format("truetype");
+
+	font-style: normal;
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: "Gilroy"
+	src: url("fonts/gilroy/Gilroylight.ttf") format("truetype");
+
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Gilroy"
+	src: url("fonts/gilroy/OpenSans-Light.ttf") format("truetype");
+
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Gilroy"
+	src: url("fonts/gilroy/OpenSans-Regular.ttf") format("truetype");
+
+	font-style: normal;
+	font-weight: 400;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+.visually-hidden {
+
+}
+
+.button {
+	font: inherit;
+	border: none;
+}
+
+.button-link {
+	background-color: #f0c52e;
+}
+
+.button-link span:active {
+	opacity: 0.3;
+}
+
+.main-header {
+	background-color: #f7e296
+}
+
+.header-logo {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+.header-logo:hover {
+	opacity: 0.6;
+}
+.header-logo:active {
+	opacity: 0.3;
+}
+
+.navigation-top {
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.navigation-search-form:focus {
+	border-bottom: 2px solid #000000;
+}
+
+.search-button {
+	font: inherit;
+
+	background-color: inherit;
+	border: 2px solid #000000;
+}
+
+.search-button:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.search-button span:active{
+	opacity: 0.3;
+}
+
+#search-input {
+	background-color: inherit;
+	border: none;
+	opacity: 0.3;
+}
+
+#search-input:hover {
+	opacity: 0.6;
+}
+
+#search-input:focus {
+	opacity: 1;
+}
+
+.header-user-menu a:hover, .navigation-bottom a:hover {
+	opacity: 0.6;
+}
+
+.header-user-menu a:active, .navigation-bottom a:active {
+	opacity: 0.3;
+}
+
+.breadcrumbs-navigation h2 {
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+	color: #000000;
+}
+
+.breadcrumbs{
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.breadcrumbs li {
+	opacity: 0.3;
+}
+
+.breadcrumbs li:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs li:active {
+	opacity: 0.1;
+}
+
+.filter h2, .goods-sort h3 {
+	font-size: 16px;
+}
+
+.colors-list label, .options-list-item label {
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 300;
+}
+
+#sort-button-active {
+	opacity: 1; 
+}
+
+.goods-sort-buttons a {
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+
+	opacity: 0.3;
+}
+
+.switch-buttons-item {
+	opacity: 0.3;
+}
+
+
+.goods-sort-buttons a:hover, .switch-buttons-item:hover {
+	opacity: 0.6;
+}
+
+.goods-sort-buttons a:active, .switch-buttons-item:active {
+	opacity: 1;
+}
+
+.goods-list p {
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.pages-navigation {
+	font-size: 16px;
+	line-height: 24px;
+
+	background-color: #ebebeb;
+}
+
+.pages-navigation button {
+	background-color: inherit;
+}
+
+.pages-list-item {
+	opacity: 0.3;
+}
+
+.pages-list-item-active {
+	opacity: 1;
+}
+
+.main-footer {
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	font-weight: 300;
+	color: #e6e6e6;
+
+	background-color: #464646;
+}
+
+.logo-footer {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 48px;
+	line-height: auto;
+	font-weight: 800;
+	color: #ffc600;
+}
+
+.logo-footer a:hover, .footer-site-menu li:hover, .icon:hover {
+	opacity: 0.6;
+}
+
+.logo-footer a:active, .footer-site-menu li:active, .icon:active {
+	opacity: 0.3;
+}
+
+.footer-user-menu li {
+	opacity: 0.7;
+}
+
+
+.footer-user-menu li:hover {
+	opacity: 1;
+}
+
+.footer-user-menu li:active {
+	opacity: 0.3;
+}
+
+
+.footer-middle {
+	line-height: 30px;
+}
+
+.footer-site-menu {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	color: #ffffff;
+}
+
+.social-buttons img {
+	opacity: 0.3;
+	background-color: inherit;
+}
+
+.social-buttons img:hover {
+	opacity: 1;
+}
+
+.social-buttons img:active {
+	opacity: 0.1;
+}
+
+

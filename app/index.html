@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
 <head>
 	<title>DEVICE</title>
@@ -6,218 +6,243 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header class="main-header">
-		<h1><a class="header-logo">DEVICE</a></h1>
-		<nav class="header-nav" aria-label="Navigation">
-			<h2 class="visually-hidden">Навигация</h2>
-			<div class="navigation-top" aria-label="Navigation for user">
-				<form class="navigation-search-form" action="" method="post" aria-label="Поиск по сайту">
-					<img src="img/search.svg" alt="Search">
-					<input id="search-input" type="search" name="search-input" placeholder="Поиск по сайту">
-					<label for="search-input" class="visually-hidden">Поле поиска</label>
-					<button class="button search-button" aria-label="Найти" type="submit"><span>Найти</span></button>
-				</form>
-				<ul class="header-user-menu">
-					<li><a href="#" class="enter">Войти</a></li>
-					<li><a href="#" lass="compare">Сравнить</a></li>
-					<li><a href="#" class="card">Корзина</a></li>
-				</ul>
-			</div>
-			<div class="navigation-bottom" aria-label="Navigation on site">
-				<div class="offers" aria-label="goods">
-					<a href="#">КАТАЛОГ ТОВАРОВ</a>
-					<ul class="goods-list visually-hidden">
-						<li class="goods-list-item"><a href="#">Виртуальная реальность</a></li>
-						<li class="goods-list-item"><a href="#">Фитнес-браслеты</a></li>
-						<li class="goods-list-item"><a href="#">Квадрокоптеры</a></li>
-						<li class="goods-list-item"><a href="#">Моноподы для селфи</a></li>
-						<li class="goods-list-item"><a href="#">Умные часы</a></li>
-						<li class="goods-list-item"><a href="#">Экшн-камеры</a></li>
+	<div class="wrapper">
+		<header class="main-header">
+			<h1 class="header-logo"><a>DEVICE</a></h1>
+			<nav class="header-nav" aria-label="Navigation">
+				<h2 class="visually-hidden">Навигация</h2>
+				<div class="navigation-top">
+					<form class="navigation-search-form" action="" method="post" aria-label="Поиск по сайту">
+						<input id="search-input" type="search" name="search-input" placeholder="Поиск по сайту">
+						<label for="search-input" class="visually-hidden">Поле поиска</label>
+						<button class="button search-button visually-hidden" aria-label="Найти" type="submit"><span>Найти</span></button>
+					</form>
+					<ul class="header-user-menu">
+						<li class="header-enter"><a href="#">Войти</a></li>
+						<li class="header-compare"><a href="#">Сравнить</a></li>
+						<li class="header-card"><a href="#">Корзина</a></li>
 					</ul>
 				</div>
-				<ul class="header-site-menu">
-					<li><a href="#" class="delivery-link">ДОСТАВКА</a></li>
-					<li><a href="#" class="Guarantees-link">ГАРАНТИЯ</a></li>
-					<li><a href="#" class="contacts-link">КОНТАКТЫ</a></li>
+				<div class="navigation-bottom" aria-label="Navigation on site">
+					<div class="offers" aria-label="goods">
+						<a class="dropdown-menu-header" href="#">КАТАЛОГ ТОВАРОВ</a>
+						<ul class="goods-list visually-hidden">
+							<div class="first-column">
+								<li class="goods-list-item"><a href="#">Виртуальная реальность</a></li>
+								<li class="goods-list-item"><a href="#">Моноподы для селфи</a></li>
+								<li class="goods-list-item"><a href="#">Экшн-камеры</a></li>
+							</div>
+							<div class="second-column">
+								<li class="goods-list-item"><a href="#">Фитнес-браслеты</a></li>
+								<li class="goods-list-item"><a href="#">Умные часы</a></li>
+							</div>
+							<div class="third-column">
+								<li class="goods-list-item"><a href="#">Квадрокоптеры</a></li>
+							</div>
+						</ul>
+					</div>
+					<ul class="header-site-menu">
+						<li  class="delivery-link"><a href="#">ДОСТАВКА</a></li>
+						<li  class="guarantees-link"><a href="#">ГАРАНТИЯ</a></li>
+						<li  class="contacts-link"><a href="#">КОНТАКТЫ</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="container">
+			<section class="most-popular-goods">
+				<ol class="slider">
+					<li class="slider-item">
+						<h2 class="visually-hidden">Selfie-stick</h2>
+						<img src="img/slider-1.png" alt="Selfie-stick">
+						<div class="slider-description-wrapper">
+							<b class="slider-slogan">Делай селфи, как Бен Стиллер!</b>
+							<p class="slider-description">
+								Самая длинная палка для селфи доступна в нашем магазине.
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+							</p>
+							<a href="#" class="button-link"><span>Подробнее</span></a>
+							<ul class="slider-characteristic">
+								<li>
+									<b>8,5 м</b>
+									<p>Длина палки</p>
+								</li>
+								<li>
+									<b>5 кг</b>
+									<p>Вес палки</p>
+								</li>
+								<li>
+									<b>Карбон</b>
+									<p>Материал</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="slider-item visually-hidden"> 
+						<h2 class="visually-hidden">Smart-clock</h2>
+						<img src="img/slider-2.png" alt="Smart-clock">
+						<div class="slider-description-wrapper">
+							<b class="slider-slogan">Худеем правильно!</b>
+							<p class="slider-description">
+								Мотивирующие фитнес-браслеты помогут найти в себе силы
+								не пропускать занятия и соблюдать диету.
+							</p>
+							<a href="#" class="button-link"><span>Подробнее</span></a>
+							<b>48 часов</b>
+							<p>Без подзарядки</p>
+						</div>
+					</li>
+					<li class="slider-item visually-hidden">
+						<h2 class="visually-hidden">Quadcopter</h2>
+						<img src="img/slider-3.png" alt="Quadcopter">
+						<div class="slider-description-wrapper">
+							<b class="slider-slogan">Порхает как бабочка, жалит как пчела!</b>
+							<p class="slider-description">
+								Этот обычный, на первый взгляд квадрокоптер оснащен
+								мощным лазером, замаскированным под стандартную камеру.
+							</p>
+							<a href="#" class="button-link"><span>Подробнее</span></a>
+							<ul class="slider-characteristic">
+								<li>
+									<b>800 м</b>
+									<p>Дальность полета</p>
+								</li>
+								<li>
+									<b>50 м</b>
+									<p>Радиус поражения</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ol>
+			</section>
+			<ul class="slider-buttons" aria-label="Переключение товаров">
+				<li><button class="visually-hidden slider-btn">Selfie-stick</button></li>
+				<li><button class="visually-hidden slider-btn">Smart-clock</button></li>
+				<li><button class="visually-hidden slider-btn">Quadcopter</button></li>
+			</ul>
+			<nav class="products">
+				<h2 class="visually-hidden">Товары</h2>
+				<ul class="products-list">
+					<li class="products-list-item">
+						<a href="#">
+							<div class="product-img-wrapper">
+								<img src="img/popular-1.svg" alt="">
+							</div>
+							<h3>Виртуальная реальность</h3>
+						</a>
+					</li>
+					<li class="products-list-item">
+						<a href="#">
+							<div class="product-img-wrapper">
+								<img src="img/popular-2.svg" alt="">
+							</div>
+							<h3>Моноподы для селфи</h3>
+						</a>
+					</li>
+					<li class="products-list-item">
+						<a href="#">
+							<div class="product-img-wrapper">
+								<img src="img/popular-3.svg" alt="">
+							</div>
+							<h3>Экшн-камеры</h3>
+						</a>
+					</li>
+					<li class="products-list-item">
+						<a href="#">
+							<div class="product-img-wrapper">
+								<img src="img/popular-4.svg" alt="">
+							</div>
+							<h3>Фитнес-браслеты</h3>
+						</a>
+					</li>
+					<li class="products-list-item"> 
+						<a href="#">
+							<div class="product-img-wrapper">
+								<img src="img/popular-5.svg" alt="">
+							</div>
+							<h3>Умные часы</h3>
+						</a>
+					</li>
+					<li class="products-list-item">
+						<a href="#">
+							<div class="product-img-wrapper">
+								<img src="img/popular-6.svg" alt="">
+							</div>
+							<h3>Квадрокоптеры</h3>
+						</a>
+					</li>
 				</ul>
+			</nav>
+			<section class="services">
+				<h2 class="visually-hidden">Сервисы</h2>
+				<ul class="services-navigation">
+					<li><button class="button">ДОСТАВКА</button></li>
+					<li><button class="button">ГАРАНТИЯ</button></li>
+					<li><button class="button">КРЕДИТ</button></li>
+				</ul>
+				<section class="delivery-service">
+					<h3>Доставка</h3>
+					<p class="service-description">
+						Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+						совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж
+					</p>
+				</section>
+				<section class="Guarantees-service visually-hidden">
+					<h3>Гарантии</h3>
+					<p class="service-description">
+						Если из-за купленного у нас товара у вас сгорит дом
+						- не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+					</p>
+				</section>
+				<section class="credit-service visually-hidden">
+					<h3>Кредит</h3>
+					<p class="service-description">
+						Залезть в долговую яму стало проще! Кредитные
+						консультанты подберут для вас наиболее выгодные 
+						условия кредита. Выгодные для нашего банка, разумеется.
+					</p>
+				</section>
+			</section>
+			<aside class="logotypes">
+				<ul>
+					<li><img src="img/logo-1-oc.jpg" alt="DJI"></li>
+					<li><img src="img/logo-2-oc.jpg" alt="SP GADGETS"></li>
+					<li><img src="img/logo-3-oc.jpg" alt="GoPro"></li>
+					<li><img src="img/logo-4-oc.jpg" alt="VIVE"></li>
+				</ul>
+			</aside>
+			<div class="about-us-and-contacts">
+				<section class="about-us">
+					<h2>О нас</h2>
+					<p>
+						Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+					</p>
+					<p>
+						Мы можем доставить ваш товар в самые отдаленные точки России!
+						DEVICE работает со многими транспортными компаниями:
+					</p>
+					<ul class="about-us-companies-list">
+						<li>Деловые Линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспедиция</li>
+					</ul>
+					<a href="#" class="button-link"><span>ПОДРОБНЕЕ О НАС</span></a>
+				</section>
+				<section class="contacts">
+					<h2>Контакты</h2>
+					<p>
+						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+					</p>
+					<img src="img/map.png" alt="Adress here">
+					<a href="#" class="button-link"><span>НАПИШИТЕ НАМ</span></a>
+				</section>
 			</div>
-		</nav>
-	</header>
-	<main class="container">
-		<section class="most-popular-goods">
-			<ol class="slider">
-				<li class="selfie-stick-slide">
-					<h2 class="visually-hidden">Selfie-stick</h2>
-					<img src="img/slider-1.png" alt="Selfie-stick">
-					<b class="slider-slogan">Делай селфи, как Бен Стиллер!</b>
-					<p class="slider-description">
-						Самая длинная палка для селфи доступна в нашем магазине.
-						Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-					</p>
-					<a href="#" class="button-link"><span>Подробнее</span></a>
-					<ul class="Selfie-stick-characteristic">
-						<li>
-							<b>8,5 м</b>
-							<p>Длина палки</p>
-						</li>
-						<li>
-							<b>5 кг</b>
-							<p>Вес палки</p>
-						</li>
-						<li>
-							<b>Карбон</b>
-							<p>Материал</p>
-						</li>
-					</ul>
-				</li>
-				<li class="smart-clock-slide"> 
-					<h2 class="visually-hidden">Smart-clock</h2>
-					<img src="img/slider-2.png" alt="Smart-clock">
-					<b class="slider-slogan">Худеем правильно!</b>
-					<p class="slider-description">
-						Мотивирующие фитнес-браслеты помогут найти в себе силы
-						не пропускать занятия и соблюдать диету.
-					</p>
-					<a href="#" class="button-link"><span>Подробнее</span></a>
-					<b>48 часов</b>
-					<p>Без подзарядки</p>
-				</li>
-				<li class="quadcopter-slide">
-					<h2 class="visually-hidden">Quadcopter</h2>
-					<img src="img/slider-3.png" alt="Quadcopter">
-					<b class="slider-slogan">Порхает как бабочка, жалит как пчела!</b>
-					<p class="slider-description">
-						Этот обычный, на первый взгляд квадрокоптер оснащен
-						мощным лазером, замаскированным под стандартную камеру.
-					</p>
-					<a href="#" class="button-link"><span>Подробнее</span></a>
-					<ul class="Quadcopter-characteristic">
-						<li class="Quadcopter-characteristic-item">
-							<b>800 м</b>
-							<p>Дальность полета</p>
-						</li>
-						<li class="Quadcopter-characteristic-item">
-							<b>50 м</b>
-							<p>Радиус поражения</p>
-						</li>
-					</ul>
-				</li>
-			</ol>
-		</section>
-		<ul class="slider-buttons" aria-label="Переключение товаров">
-			<button class="visually-hidden slider-btn">Selfie-stick</button>
-			<button class="visually-hidden slider-btn">Smart-clock</button>
-			<button class="visually-hidden slider-btn">Quadcopter</button>
-		</ul>
-		<nav class="products">
-			<h2 class="visually-hidden">Товары</h2>
-			<ul class="products-list">
-				<li class="products-list-item">
-					<a href="#">
-						<img src="img/popular-1.svg">
-						<h3>Виртуальная реальность</h3>
-					</a>
-				</li>
-				<li class="products-list-item">
-					<a href="#">
-						<img src="img/popular-2.svg">
-						<h3>Моноподы для селфи</h3>
-					</a>
-				</li>
-				<li class="products-list-item">
-					<a href="#">
-						<img src="img/popular-3.svg">
-						<h3>Экшн-камеры</h3>
-					</a>
-				</li>
-				<li class="products-list-item">
-					<a href="#">
-						<img src="img/popular-4.svg">
-						<h3>Фитнес-браслеты</h3>
-					</a>
-				</li>
-				<li class="products-list-item"> 
-					<a href="#">
-						<img src="img/popular-5.svg">
-						<h3>Умные часы</h3>
-					</a>
-				</li>
-				<li class="products-list-item">
-					<a href="#">
-						<img src="img/popular-6.svg">
-						<h3>Квадрокоптеры</h3>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<section class="services">
-			<h2 class="visually-hidden">Сервисы</h2>
-			<ul class="services-navigation">
-				<li><button class="button">ДОСТАВКА</button></li>
-				<li><button class="button">ГАРАНТИЯ</button></li>
-				<li><button class="button">КРЕДИТ</button></li>
-			</ul>
-			<section class="delivery">
-				<h3>Доставка</h3>
-				<p class="service-description">
-					Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-					совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж
-				</p>
-			</section>
-			<section class="Guarantees">
-				<h3>Гарантии</h3>
-				<p class="service-description">
-					Если из-за купленного у нас товара у вас сгорит дом
-					- не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-				</p>
-			</section>
-			<section class="credit">
-				<h3>Кредит</h3>
-				<p class="service-description">
-					Залезть в долговую яму стало проще! Кредитные
-					консультанты подберут для вас наиболее выгодные 
-					условия кредита. Выгодные для нашего банка, разумеется.
-				</p>
-			</section>
-		</section>
-		<aside class="logotypes">
-			<ul>
-				<li><img src="img/logo-1-oc.jpg" alt="DJI"></li>
-				<li><img src="img/logo-2-oc.jpg" alt="SP GADGETS"></li>
-				<li><img src="img/logo-3-oc.jpg" alt="GoPro"></li>
-				<li><img src="img/logo-4-oc.jpg" alt="VIVE"></li>
-			</ul>
-		</aside>
-		<div class="about-us-and-contacts">
-			<section class="about-us">
-				<h2>О нас</h2>
-				<p>
-					Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-				</p>
-				<p>
-					Мы можем доставить ваш товар в самые отдаленные точки России!
-					DEVICE работает со многими транспортными компаниями:
-				</p>
-				<ul class="about-us-companies-list">
-					<li>Деловые Линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
-				</ul>
-				<a href="#" class="button-link"><span>ПОДРОБНЕЕ О НАС</span></a>
-			</section>
-			<section class="contacts">
-				<h2>Контакты</h2>
-				<p>
-					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-				</p>
-				<img src="img/map.png" alt="Adress here">
-				<a href="#" class="button-link"><span>НАПИШИТЕ НАМ</span></a>
-			</section>
-		</div>
-	</main>
+		</main>
+	</div>
 	<footer class="main-footer">
 		<div class="footer-top">
-			<span class="logo-footer">DEVICE</span>
+			<span class="logo-footer"><a>DEVICE</a></span>
 			<ul class="footer-user-menu">
 				<li><a href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
@@ -235,18 +260,18 @@
 		</div>
 		<div class="footer-bottom">
 			<ul class="social-buttons">
-				<li><a href="#" class="visually-hidden social-button-facebook" aria-label="Facebook"><img src="img/fb.png" alt=""></a></li>
-				<li><a href="#" class="visually-hidden social-button-instagramm" aria-label="Instagramm"><img src="img/inst.png" alt=""></a></li>
-				<li><a href="#" class="visually-hidden social-button-twitter" aria-label="Twitter"><img src="img/twitter.png" alt=""></a></li>
+				<li><a href="#" class="social-button-facebook" aria-label="Facebook"><img src="img/fb.png" alt="Facebook"></a></li>
+				<li><a href="#" class="social-button-instagramm" aria-label="Instagramm"><img src="img/inst.png" alt="Instagramm"></a></li>
+				<li><a href="#" class="social-button-twitter" aria-label="Twitter"><img src="img/twitter.png" alt="Twitter"></a></li>
 			</ul>
 			<p class="copyright">
-				<span class="icon">HTML Academy</span>
+				<a class="icon" href="#" aria-label="HTML Academy"><img src="img/logo-html.svg" alt=""></a>
 			</p>
 		</div>
 	</footer>
 	<section class="contact-us">
 		<h2 class="visually-hidden">Contact us</h2>
-		<form action="" class="contact-us-form" methond="post">
+		<form action="" class="contact-us-form" method="post">
 			<label class="contact-us-form-item">
 				Ваше имя:
 				<input type="text" name="name" placeholder="Имя Фамилия">
@@ -259,7 +284,7 @@
 				Текст письма:
 				<textarea name="message" placeholder="В свободной форме"></textarea>
 			</label>
-			<button type="submit" class="button button-link">Отправить</button>
+			<button type="submit" class="button button-link"><span>Отправить</span></button>
 		</form>
 	</section>
 	<section class="map-popup">

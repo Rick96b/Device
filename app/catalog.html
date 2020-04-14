@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Catalog</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style_catalog.css">
 </head>
 <body>
 	<header class="main-header">
@@ -16,7 +18,7 @@
 				</form>
 				<ul class="header-user-menu">
 					<li><a href="#" class="enter">Войти</a></li>
-					<li><a href="#" lass="compare">Сравнить</a></li>
+					<li><a href="#" class="compare">Сравнить</a></li>
 					<li><a href="#" class="card">Корзина</a></li>
 				</ul>
 			</div>
@@ -50,7 +52,7 @@
 			</ul>
 		</div>
 		<aside class="filter">
-			<h2>Фильтр</h2>
+			<h2>ФИЛЬТР:</h2>
 			<form action="" class="filter-form" method="post">
 				<label for="price">Стоимость</label>
 				<input id="price" type="range" min="0" max="10000" step="100">
@@ -58,50 +60,50 @@
 					<legend>Цвет</legend>
 					<ul class="colors-list">
 						<li class="colors-list-option">
-							<label for="color-black">Черный</label>
 							<input id="color-black" type="checkbox" class="visually-hidden" name="black-color">
+							<label for="color-black">Черный</label>
 						</li>
 						<li class="colors-list-option">
-							<label for="color-white">Белый</label>
 							<input id="color-white" type="checkbox" class="visually-hidden" name="white-color">
+							<label for="color-white">Белый</label>
 						</li>
 						<li class="colors-list-option">
-							<label for="color-blue">Синий</label>
 							<input id="color-blue" type="checkbox" class="visually-hidden" name="blue-color">
+							<label for="color-blue">Синий</label>
 						</li>
 						<li class="colors-list-option">
-							<label for="color-red">Красный</label>
 							<input id="color-red" type="checkbox" class="visually-hidden" name="red-color">
+							<label for="color-red">Красный</label>
 						</li>
 						<li class="colors-list-option">
-							<label for="color-pink">Розовый</label>
 							<input id="color-pink" type="checkbox" class="visually-hidden" name="pink-color">
-						</li class="colors-list-option">
+							<label for="color-pink">Розовый</label>
+						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
 					<legend>Bluetooth</legend>
 					<ul class="options-list">
 						<li class="options-list-item">
-							<label for="radio-yes">Есть</label>
 							<input id="radio-yes" type="radio" class="visually-hidden filter-radio-input" name="bluetooth-group">
+							<label for="radio-yes">Есть</label>
 						</li>
 						<li class="options-list-item">
-							<label for="radio-no">Нет</label>
 							<input id="radio-no" type="radio" class="visually-hidden filter-radio-input" name="bluetooth-group">
+							<label for="radio-no">Нет</label>
 						</li>
 					</ul>
 				</fieldset>
-				<button class="button" type="submit">Показать</button>
+				<button class="button button-link" type="submit"><span>Показать</span></button>
 			</form>
 		</aside>
 		<section class="goods">
 			<h2 class="visually-hidden">Товары</h2>
 			<div class="goods-sort">
-				<h3>Сортировка:</h3>
+				<h3>СОРТИРОВКА:</h3>
 				<ul class="goods-sort-buttons">
 					<li class="goods-sort-buttons-item">
-						<a href="#">По цене</a>
+						<a id="sort-button-active">По цене</a>
 					</li>
 					<li class="goods-sort-buttons-item">
 						<a href="#">По типу</a>
@@ -111,41 +113,49 @@
 					</li>
 				</ul>
 				<ul class="goods-switch-buttons">
-					<li class="goods-switch-buttons-item">
-						<a href="#">Increase</a>
+					<li class="switch-buttons-item">
+						<a href="#" aria-label="Increase"><img src="img/icon-up-dir.svg" alt="Increase_button"></a>
 					</li>
-					<li class="goods-switch-buttons-item">
-						<a href="#">Decrease</a>
+					<li class="switch-buttons-item-active">
+						<a aria-label="Decrease"><img src="img/icon-down-dir.svg" alt="Decrease_button"></a>
 					</li>
 				</ul>
 			</div>
 			<ul class="goods-list">
 				<li class="goods-list-item">
-					<img src="img/goods-1.jpg" alt="Selfie-stick">
-					<h3>Любительская селфи-палка</h3>
-					<p>500 руб</p>
+					<a href="#">
+						<img src="img/goods-1.jpg" alt="Selfie-stick">
+						<h3>Любительская селфи-палка</h3>
+						<p>500 руб</p>
+					</a>
 				</li>
 				<li class="goods-list-item">
-					<img src="img/goods-2.jpg" alt="Selfie-stick">
-					<h3>Профессиональная селфи-палка</h3>
-					<p>1500 руб</p>
+					<a href="#">
+						<img src="img/goods-2.jpg" alt="Selfie-stick">
+						<h3>Профессиональная селфи-палка</h3>
+						<p>1500 руб</p>
+					</a>
 				</li>
 				<li class="goods-list-item">
-					<img src="img/goods-3.jpg" alt="Selfie-stick">
-					<h3>Непотопляемая селфи-палка</h3>
-					<p>2500 руб</p>
+					<a href="#">
+						<img src="img/goods-3.jpg" alt="Selfie-stick">
+						<h3>Непотопляемая селфи-палка</h3>
+						<p>2500 руб</p>
+					</a>
 				</li>
 				<li class="goods-list-item">
-					<img src="img/goods-4.jpg" alt="Selfie-stick">
-					<h3>Селфи-палка <<Следуй за мной>></h3>
-					<p>4900 руб</p>
+					<a href="#">
+						<img src="img/goods-4.jpg" alt="Selfie-stick">
+						<h3>Селфи-палка <<Следуй за мной>></h3>
+						<p>4900 руб</p>
+					</a>
 				</li>
 			</ul>
 		</section>
 		<nav class="pages-navigation">
 			<button class="button" type="button">Назад</button>
 			<ul class="pages-list">
-				<li class="pages-list-item"><button class="button" type="button">1</button></li>
+				<li class="pages-list-item-active"><button class="button" type="button">1</button></li>
 				<li class="pages-list-item"><button class="button" type="button">2</button></li>
 				<li class="pages-list-item"><button class="button" type="button">3</button></li>
 			</ul>
@@ -154,7 +164,7 @@
 	</main>
 	<footer class="main-footer">
 		<div class="footer-top">
-			<span class="logo-footer">DEVICE</span>
+			<span class="logo-footer"><a href="#">DEVICE</a></span>
 			<ul class="footer-user-menu">
 				<li><a href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
@@ -172,12 +182,12 @@
 		</div>
 		<div class="footer-bottom">
 			<ul class="social-buttons">
-				<li><a href="#" class="social-button-facebook">Facebook</a></li>
-				<li><a href="#" class="social-button-instagramm">Instagramm</a></li>
-				<li><a href="#" class="social-button-twitter">Twitter</a></li>
+				<li><a href="#" class="visually-hidden social-button-facebook" aria-label="Facebook"><img src="img/fb.png" alt="Facebook"></a></li>
+				<li><a href="#" class="visually-hidden social-button-instagramm" aria-label="Instagramm"><img src="img/inst.png" alt="Instagramm"></a></li>
+				<li><a href="#" class="visually-hidden social-button-twitter" aria-label="Twitter"><img src="img/twitter.png" alt="Twitter"></a></li>
 			</ul>
 			<p class="copyright">
-				<span class="icon">HTML Academy</span>
+				<a class="icon" href="#" aria-label="HTML Academy"><img src="img/logo-html.svg" alt=""></a>
 			</p>
 		</div>
 	</footer>
